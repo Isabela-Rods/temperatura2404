@@ -11,14 +11,36 @@ public class Conversor {
         //Apresentação do programa
         System.out.println("\n\t\t\t -- Conversor --\n");
 
-        //Entradas
-        System.out.print("Informe a temperatura em ºC: ");
-        cel = entrada.nextDouble();
+        //Menu
+        System.out.println("1. ºC para ºF");
+        System.out.println("2. ºF para ºC");
+        System.out.println("3. Sair");
 
+         //Opção do usuário
+         System.out.println("\nOpção");
+         int op = entrada.nextInt();
+ 
+         if(op == 1){
+             System.out.println("Conversão para fahrenheit");
+
+        //Entradas
+        System.out.println("Informe a temperatura em ºC: ");
+        cel = entrada.nextDouble();
+        
         //Processamento
         fah = cel * 9 / 5 + 32;
-
+ 
         //Saída
-        System.out.println("\n" + cel + " ºC = " + fah + "ºF\n");
+        System.out.println("\n" + cel + "ºC =" + fah + "ºF\n");
+    }else if(op == 2){
+        //Converter Fahrenheit para Celsius
+    }else if(op == 3) {
+        System.out.println("Forte abraço!!!");
+        
+    }else {
+        System.out.println("Opção" + op + "incorreta!");
     }
+    
 }
+}
+    
