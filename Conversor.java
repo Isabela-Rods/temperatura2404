@@ -23,24 +23,34 @@ public class Conversor {
          if(op == 1){
              System.out.println("Conversão para fahrenheit");
 
-        //Entradas
-        System.out.println("Informe a temperatura em ºC: ");
-        cel = entrada.nextDouble();
-        
-        //Processamento
-        fah = cel * 9 / 5 + 32;
- 
-        //Saída
-        System.out.println("\n" + cel + "ºC =" + fah + "ºF\n");
-    }else if(op == 2){
-        //Converter Fahrenheit para Celsius
-    }else if(op == 3) {
-        System.out.println("Forte abraço!!!");
-        
-    }else {
-        System.out.println("Opção" + op + "incorreta!");
-    }
+            //Entradas
+            System.out.println("Informe a temperatura em ºC: ");
+            cel = entrada.nextDouble();
+            
+            //Processamento
+            fah = cel * 9 / 5 + 32;
     
-}
+            //Saída
+            System.out.println("\n" + cel + "ºC =" + fah + "ºF\n");
+        }else if(op == 2){
+            
+            
+            //Entrada
+            System.out.println("Informe a temperatura em ºF:");
+            fah = entrada.nextInt();
+
+            //Processamento
+            cel = (fah - 32) * 5 / 9;
+
+            //Saída
+            System.out.println("\n" + fah + "ºF =" +  cel + "ºC\n");
+        }else if(op == 3) {
+            System.out.println("Forte abraço!!!");
+            
+        }else {
+            System.out.println("Opção" + op + "incorreta!");
+        }
+    
+    }
 }
     
